@@ -59,15 +59,17 @@ const SidenavContent = ({ isOpen, toggle }) => {
         {icons.close}
       </button>
 
-      <nav className='mt-10 flex flex-col gap-8'>
-        <SidenavLink>
-          <FeaturesCollapsible />
-        </SidenavLink>
-        <SidenavLink>
-          <CompanyCollapsible />
-        </SidenavLink>
-        <SidenavLink>Career</SidenavLink>
-        <SidenavLink>About</SidenavLink>
+      <nav>
+        <ul className='mt-10 flex flex-col gap-8'>
+          <SidenavLink>
+            <FeaturesCollapsible />
+          </SidenavLink>
+          <SidenavLink>
+            <CompanyCollapsible />
+          </SidenavLink>
+          <SidenavLink>Career</SidenavLink>
+          <SidenavLink>About</SidenavLink>
+        </ul>
       </nav>
       <div className='flex flex-col mt-10 items-stretch'>
         <Button variant='tertiary'>Login</Button>
